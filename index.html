@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Variabili Javascript</title>
 </head>
 <body>
-    <!-- Contenuto della pagina -->
-<div class="container">
-
-    <div>Questo è un esercizio sulle variabili Javascript</div>
-        <button id="btn1">Stampa Numero</button>
-        <button id="btn2">Stampa Messaggio</button>
-        <button id="btn3">Stampa Pi greco</button>
-
-        
-        
-        <div id="output"></div>
+    <div class="container">
+        <h1>Esercizio Variabili JS</h1>
+        <div class="button-group">
+            <button onclick="console.log('Il valore di num1 è: 42')">Stampa Numero 1</button>
+            <button onclick="console.log('Il valore di num2 è: 50')">Stampa Numero 2</button>
+            
+            <!-- Bottoni separati per la stringa -->
+            <button onclick="console.log('Valore iniziale: Ciao a tutti!')">Stampa Stringa Iniziale</button>
+            <button onclick="console.log('Valore dopo cambio: Ora ho cambiato valore alla stringa')">Stampa Stringa Cambiata</button>
+            
+            <div class="pi-wrapper">
+                <button onclick="console.log('Il valore di PIGRECO è: 3.14159265359')">Stampa Pi greco</button>
+                <button id="sub-btn" onclick="alert('Errore simulato: Impossibile ri-assegnare una costante')">
+                    Se cambio il valore pi greco
+                </button>
+            </div>
+        </div>
+        <div id="output">Apri la console (F12) per vedere gli output.</div>
     </div>
-    <!-- Collegamento al file JS esterno -->
     <script src="main.js"></script>
 </body>
 </html>
